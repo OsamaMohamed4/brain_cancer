@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Overflow</title>
+	<link rel="stylesheet" href="{% static 'css/overflow.css' %}">
+	<link rel="stylesheet" href="{% static 'css/test.css' %}">
+</head>
+<body>
+    <div class="heade"></div>
+	<div class="header">
+		<img src="{% static 'images/dd.png' %}" height="50px" class="log">
+        <ul class="ul">
+            <li class="li1"><a href="{% url 'home' %}" >Brain Tumor Basics</a></li>
+            <li class="li1"><a href="{% url 'overflow' %}" style="color: blue;">Brain Tumor Overflow</a></li>
+            <li class="li1"><a href="{% url 'team' %}">Our Team</a></li>
+            <a href="{% url 'register' %}" class="Sign1" style="margin-left: 5px; margin-top:-20px">Sign Up</a>
+        </ul>
+		<!-- <h5 style="color: red;" class="log">Brain Tunor</h5> -->
+	</div>
+	<div class="header2" style="background-color: rgb(228, 243, 238);">
+		<div class="div21">
+			<h1>brain tumor overflow</h1>
+			<a href="{% url 'login' %}"  class="Log">Log In</a>
+			<a href="{% url 'register' %}"  class="Sign">Sign Up</a>
+		</div>
+		<div class="div22">
+			<img src="{% static 'images/brr.png' %}" height="350px">
+		</div>	
+	</div>
+    <div class="div2" id="what">
+        <div class="what">
+            <h3>What is a brain tumor?</h3>
+            <p>A brain tumor is an abnormal growth of cells in the brain. These tumors can be either benign (non-cancerous) or malignant (cancerous). <br><br>Brain tumors can affect people of any age,
+                 and their symptoms depend on the location, size, and type of tumor.</p>
+            <h4>There are two main types of brain tumors:</h4>
+            <ul>
+                <li>Primary brain tumors: These tumors originate in the brain and can be either benign or malignant.</li>
+                <li>Metastatic brain tumors: These tumors spread to the brain from other parts of the body, such as the lungs, breast, or colon.</li>
+            </ul>
+        </div>
+        <div class="div4images">
+        </div>
+    </div>
+    <div class="div2" style="background-color:#FFECEC">
+        <div class="div3">
+            <h3>Benign vs. malignant brain tumors</h3>
+            <p>Though benign brain tumors can cause many serious issues, they are not cancerous, meaning that they grow slowly and don’t typically spread to other tissues.<br><br>
+
+                They also usually have more clearly defined borders, making them easier 
+                to remove surgically, and they don’t usually come back after removal.<br><br>
+                
+                On the other hand, malignant brain tumors are cancerous, grow rapidly
+                , and can spread to other parts of your brain or central nervous system, 
+                which can cause life-threatening complications.</p>
+        </div>
+    </div>
+    <div class="div2" id="type"  style="background-color:#FFBDF7">
+        <div class="div3">
+            <h1>Types of brain tumors</h1>
+            <h3>Primary brain tumors</h3>
+            <p>Primary brain tumors originate in your brain. They can develop from your:</p>
+            <ul>
+                <li>brain cells</li>
+                <li>the membranes that surround your brain, which are called meninges</li>
+                <li>nerve cells</li>
+            </ul>
+            <p>Primary tumors can be benign or cancerous. In adults, the most common types of brain tumors are gliomas and meningiomas.</p>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="div3" id="Gliomas">
+            <h3>Gliomas</h3>
+            <p>Gliomas are tumors that develop from glial cells. These cells normally:</p>
+            <ul>
+                <li>support the structure of your central nervous system</li>
+                <li>provide nutrition to your central nervous system</li>
+                <li>clean cellular waste</li>
+                <li>break down dead neurons</li>
+            </ul>
+        </div>
+    </div>
+    <div class="div2" style="background-color:#C2DEDC">
+        <div class="div3">
+            <h3>Secondary brain tumors</h3>
+            <p>Secondary brain tumors make up the majority of brain cancers. They start in one part of the body and spread, or metastasize, to the brain.
+                <br> <br>The following can metastasizeTrusted Source to the brain:</p>
+                <ul>
+                    <li>lung cancer</li>
+                    <li>breast cancer</li> 
+                    <li>kidney cancer</li> 
+                    <li>skin cancer</li> 
+                </ul>
+        </div>
+    </div>
+    
+    	<div class="sys" id="sys">
+			<h1>Symptoms and Risk Factors</h1>
+			<!-- <a href="sys.html" class="Read">Read More</a> -->
+		</div>
+		<div class="symptoms" id="symp">
+			<h3>symptoms</h3>
+			<p class="pre">Patients with brain tumors may present with a variety of symptoms secondary to the effect of a 
+				growing mass.Here are some of the most common symptoms of patients with brain tumors:
+			</p>
+			<ul class="list">
+				<li>headache</li>
+				<li>seizures</li>
+				<li>nausea</li>
+				<li>depression</li>
+				<li>behavioral changes</li>
+				<li>visual disturbances</li>
+			  </ul>
+			  
+		</div>
+		<div class="symptoms">
+			<h3>risk factors</h3>
+			<p class="pre">Risk factors vary depending on the type of brain tumor. The following factors may raise a person's risk 
+				of developing a brain tumor:
+			</p>
+			<ul class="list">
+				<li>Age: Brain tumors can occur at any age, but the risk increases with age.</li>
+				<li>Environmental factors: Exposure to certain chemicals or toxins, such as pesticides, may increase the risk of developing a brain tumor.</li>
+				<li>Family history: Having a family history of brain tumors may increase the risk of developing a brain tumor.</li>
+				<li>Gender: Some types of brain tumors are more common in males, while others are more common in females.</li>
+			  </ul>
+			  
+		</div>
+
+
+        <div class="contact">
+            <div class="contact1">
+               <div class="ph">
+                   <h1>Contacts Us</h1>
+                   <img src="{% static 'images/team-removebg-preview.png' %}" height="80%" width="80%">
+               </div>
+               <div class="div5" id="cont">
+                <div class="phone">
+                    <i class="ri-phone-fill"></i>
+                    <img src="{% static 'images/phone.png' %}" height="30px" width="30px">
+                    <h1>Phone:</h1>
+                    <p>+1 123-456-7890</p>
+                  </div>
+                  <img src="{% static 'images/mail.png' %}" height="30px" width="30px">
+                  <div class="email">
+                    <h1>Email:</h1>
+                    <p><a href="https://shabaanmohamed431@gmail.com" target="_blank" style="color:white;">BIOGRteam.gmail.com</a></p>
+                  </div>
+                  <img src="{% static 'images/group.png' %}" height="30px" width="30px">
+                  <div class="team">
+                    <h1><a href="{% url 'team' %}" style=" text-decoration: none;color:white;">Our Team</a></h1>
+                    
+                  </div>
+            </div>
+               </div>
+               </div>
+    <div class="div7"></div>
+</body>
+</html>

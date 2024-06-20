@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+	<link rel="stylesheet" href="{% static 'css/test.css'%}">
+	
+</head>
+<body>
+    <h1 style="margin: 50px;">History</h1>
+    <table class="data-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Image</th>
+            <th>Date</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+            {% for record in patient_list %}
+              
+                    <tr>
+                        <td>{{ record.id }}</td>
+                        <td> <img src="{{ record.image.url }}" alt="Test Image"> </td>
+                        
+                        <td>{{ record.date }}</td>
+                         <td>{{ record.result}}</td>
+                       
+                    </tr>
+          
+                {% endfor %}
+
+        </tbody>
+      </table>
+    </body>
+</body>
+</html>

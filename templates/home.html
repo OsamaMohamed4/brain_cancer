@@ -1,0 +1,89 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Home Page</title>
+    
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/h.js' %}"></script>
+    <style>
+        #preview { 
+          max-width: 80%;
+          max-height: 70%;
+          margin-top: 10px;
+     
+        }
+          #preview img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      </style>
+      <script>
+        function previewImage(event) {
+          var reader = new FileReader();
+          var image = document.createElement("img");
+          var preview = document.getElementById("preview");
+  
+          reader.onload = function () {
+            image.src = reader.result;
+            preview.innerHTML = "";
+            preview.appendChild(image);
+          };
+  
+          reader.readAsDataURL(event.target.files[0]);
+        }
+      </script>
+</head>
+<body>
+    <div class="header">
+        <div class="log">
+            <img src="{% static 'images/dd.png' %}" height="50px" width="50px" class="logo">
+        </div>
+        <div class="head">
+            <img src="{% static 'images/profi.png' %}" height="40" class="user">
+            <label><a href="{% url 'profile' %}">{{user}}</a></label>
+        </div>
+    </div>
+    <div class="header2"  style="    padding-top: 100px;
+    background: linear-gradient(45deg, #CF9893, #119DA4);
+    height: 500px;">
+        <div class="div21">
+            <h1>brain tumor detection</h1>
+        </div>
+        <div class="div22" style="margin-top:50px">
+            <img src="{% static 'images/her.png' %}" height="400px" >
+        </div>
+    </div>
+
+
+    <div class="contact">
+        <div class="contact1">
+           <div class="ph">
+               <h1>Upload Image</h1>
+               <img src="{% static 'images/R-removebg-preview.png' %}" height="60%" width="80%">
+           </div>
+           <div class="div5" id="cont">
+           
+              <div class="upload">
+            <form method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+         
+                <input type="file" name="file" accept=".png, .jpg, .jpeg"  onchange="previewImage(event)">
+                <div id="preview"></div>
+                <button type="submit">Upload</button>
+            </form>
+            {% if result %}
+                <h3>Result: {{ result }}</h3>
+            {% endif %}
+        </div>
+           </div>
+           </div>
+           </div>
+  </div>
+  <div class="div7">
+</div>
+</body>
+</html>

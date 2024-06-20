@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SigUP</title>
+  <link rel="stylesheet" href="{% static 'css/LOG_SIGN.css' %}">
+</head>
+<body> 
+    <div class="overlay" style="padding-top: 100px;">
+        <form action="" method="POST">
+          {% csrf_token %}
+           <div class="con">
+           <header class="head-form">
+              <h2>Brain Tumpr Dection</h2>
+              <p>please enter your information</p>
+           </header>
+           <br>
+           <div class="field-set">
+            <input class="form-input" type="text" id="name" name="name" placeholder="Your Name" required>
+            <br>
+            <input class="form-input" type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+              <input class="form-input" id="txt-input"  name="username" type="text" placeholder="UserName" required>
+              <br>
+              <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>       
+              <br>
+            <input class="form-input" type="number" id="age" name="age" min="1" max="200" placeholder="Age" required>
+            <br>
+              <button class="log-in"> Sign UP </button>
+              <h3>OR</h3>
+              <div class="link"><a href="{% url 'login' %}" >Log IN</a></div>
+           </div>
+             
+          </div>
+        </form>
+        </div>
+</body>
+</html>

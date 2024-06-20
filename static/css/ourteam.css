@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+.ul{
+  margin-top: 30px;
+  margin-left: 23%;
+  position: absolute;
+}
+.header2 h1{
+  margin-bottom: 5%;
+}
+h3{
+  margin-top: 20px;
+}
+  .team {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    width: 80%;
+    background-color:rgb(243, 235, 235);
+  }
+  .img2 {
+    width: 30%;
+  }
+  .team1 {
+    width: 50%;
+    padding: 0 20px;
+  }
+  
+  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .allteam{
+    background-color: #F9F5EB;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 50px;
+  }
+  .parent {
+    display: inline-block;
+    width: 80%;
+    margin: 50px 10%;
+
+    /* height: 300px; */
+  }
+.child {
+    position:relative;
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    transition: transform .5s ease-out;
+}
+
+.imag {
+    width: 80%;
+    height: 100%;
+    border-radius: 150px;
+    transition: transform .5s ease-out;
+}
+.child:hover .imag{
+  cursor: pointer;
+  transform: scale(1.1) translate(-10%, -10%);
+}
+.Name:hover{
+  cursor: pointer;
+}
+  .Name {
+    margin-top: 5px;
+    font-size: 30px;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(45deg, #f1ede1, #ebd1a4);
+    padding-top: 10%;
+    margin-top: -20px;
+    border-radius: 30px;
+}
+  @media (max-width: 1000px) {
+    .ul{
+      display: none;
+    }
+    .Sign1
+    {
+      display: none;
+    }
+  }
+@media (max-width: 800px){
+ h3{
+  font-size: 25px;
+ }
+ h4{
+  font-size: 20px;
+ }
+}
+ @media (max-width: 800px){
+  h3{
+   font-size: 25px;
+  }
+  p{
+    font-size: 20px;
+  }
+.Name{
+  font-size: 20px;
+  height: 80%;
+}
+ }
+
+ @media (max-width: 500px){
+  p{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+.Name{
+  font-size: 15px;
+  height: 100%;
+  padding-top: 20px;
+}
+ } 
+  

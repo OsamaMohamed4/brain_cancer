@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MainPage</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    <script src="{% static 'js/h.js' %}"></script>
+    <style>
+        .cont1.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+    <script>
+    
+    </script>
+</head>
+<body>
+    <div class="heade"></div>
+    <div class="header">
+        <img src="{% static 'images/dd.png' %}" height="50px" class="log">
+        <ul class="ul">
+            <li class="li1"><a href="{% url 'home' %}" style="color: blue;">Brain Tumor Basics</a></li>
+            <li class="li1"><a href="{% url 'overflow' %}">Brain Tumor Overflow</a></li>
+            <li class="li1"><a href="{% url 'team' %}">Our Team</a></li>
+            <a href="{% url 'register' %}" class="Sign1" style="margin-left: 5px; margin-top:-20px">Sign Up</a>
+        </ul>
+        <!-- <h5 style="color: red;" class="log">Brain Tumor</h5> -->
+    </div>
+    <div class="header2" style="background-image: url({% static 'images/banner-bg.png' %});">
+        <div class="div21">
+            <h1>brain tumor detection</h1>
+            <a href="{% url 'login' %}" class="Log">Log In</a>
+            <a href="{% url 'register' %}" class="Sign">Sign Up</a>
+        </div>
+        <div class="div22">
+            <img src="{% static 'images/brr.png' %}" height="400px">
+        </div> 
+    </div>
+    <div class="def">
+        <div class="title">
+            <h1>Brain tumor</h1>
+        </div>
+        <div class="contain">
+            <div class="cont1">
+                <div class="img1">
+                    <img src="{% static 'images/mm.jpg' %}" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>What Brain Tumor</h3>
+                    <p>A brain tumor is an abnormal growth of cells in the brain.</p>
+                    <a href="{% url 'overflow' %}" class="Read">Read More</a>
+                </div>
+            </div>
+            <div class="cont1">
+                <div class="info">
+                    <h3>Type Of Brain Tumor</h3>
+                    <p>Primary brain tumors Secondary brain tumors.</p>
+                    <a href="{%  url 'overflow'  %}" class="Read">Read More</a>
+                </div>
+                <div class="img1">
+                    <img src="{% static 'images/lll.webp' %}" width="100%" height="100%" style="margin-left: 10%;">
+                </div>
+            </div>
+            <div class="cont1">
+                <div class="img1">
+                    <img src="{% static 'images/sh1.png' %}" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Symptoms And Risk Factors</h3>
+                    <p>Patients with brain tumors may present with a variety of symptoms.</p>
+                    <a href="{%  url 'overflow' %}" class="Read">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact1">
+            <div class="ph">
+                <h1>Contacts Us</h1>
+                <img src="{% static 'images/team-removebg-preview.png' %}" height="80%" width="80%">
+            </div> 
+            <div class="div5" id="cont">
+                <div class="phone">
+                    <i class="ri-phone-fill"></i>
+                    <img src="{% static 'images/phone.png' %}" height="30px" width="30px">
+                    <h1>Phone:</h1>
+                    <p>+1 123-456-7890</p>
+                  </div>
+                  <img src="{% static 'images/mail.png' %}" height="30px" width="30px">
+                  <div class="email">
+                    <h1>Email:</h1>
+                    <p><a href="https://shabaanmohamed431@gmail.com" target="_blank" style="color:white;">BIOGRteam.gmail.com</a></p>
+                  </div>
+                  <img src="{% static 'images/group.png' %}" height="30px" width="30px">
+                  <div class="team33">
+                    <h1><a href="{% url 'team' %}" style=" text-decoration: none;color:white;">Our Team</a></h1>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="div7"></div>
+</body>
+</html>

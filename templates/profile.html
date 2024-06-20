@@ -1,0 +1,23 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+    
+	<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    
+	
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="{% static 'images/profi.png'%}" alt="Profile Picture" class="profile-picture">
+        <h1 class="name">{{user}}</h1>
+        <ul class="contact-info">
+          <!-- <li><a href="change_password.html">Change Password</a></li> -->
+          <li><a href="{% url 'history' %}" style="font-size:30px; text-decoration: none;">My History</a></li>
+          <!-- <li><a href="main.html">Log Out</a></li> -->
+        </ul>
+      </div> 
+</body>
+</html>

@@ -1,0 +1,488 @@
+.heade{
+  height: 50px;
+  background-color: black;
+}
+.header{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    /* position: fixed; */
+    /* background-color: rgb(243, 243, 243); */
+    /* background: linear-gradient(45deg, #f3f1eb, #ecddc3); */
+    background-color:white;
+    /* box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22); */
+    z-index: 3;
+    
+  }
+  .ul{
+    margin-top: 30px;
+    margin-left: 20%;
+    position: absolute;
+  }
+  .li1{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 15px;
+    float: left;
+  }
+  ul li a{
+    text-decoration: none;
+    color: black;
+  
+  }
+  ul li ul
+  {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+  
+  }
+  ul li ul li
+  {
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: left;
+    border-bottom: solid .5px rgb(100, 100, 100);
+    color: black;
+  }
+  .li1:hover{
+    cursor: pointer;
+  }
+  .kk1{
+    display: none;
+  }
+  .li1:hover .kk1
+  {
+    display: block;
+  }
+  
+.header2 {
+  max-width: 100%;
+  /* height: 400px; */
+  padding-left: 60px;
+  padding-top: 50px;
+  /* background: linear-gradient(45deg, #CF9893, #119DA4); */
+  /* background-color: #eef0ff; */
+  background-image: url("photo/banner-bg.png");
+  color: black;
+  display: flex;
+  background-size: cover;
+}
+.div21
+{
+width: 45%;
+margin-top: 10%;
+margin-left: 40px;
+}
+.div22{
+opacity: 0;
+margin-top: -40px;
+animation-name: Show;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+.log{
+margin-top: 20px;
+margin-left: 5%;
+display: inline-block;
+}
+.header2 h1 {
+  font-size: 30px;
+  padding-top: 2%;
+  text-transform: capitalize;
+  animation-name: Edit;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  color: rgb(36, 39, 37);
+}
+.Sign1{
+display: inline-block;
+padding: 10px 30px;
+color: black;
+border-radius: 4px;
+text-decoration: none;
+font-weight: bold;
+border: solid black 1px;
+margin-top: -10px;
+}
+.Sign12{
+  display: inline-block;
+  padding: 10px 30px;
+  color: black;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  border: solid black 1px;
+  margin-top: 20px;
+  }
+.icon
+{
+  display:none;
+  cursor: pointer;
+}
+.icon:hover .ul{
+  display: block;
+}
+.Log{
+  width: 150px;
+  height: 40px;
+  padding-top: 5px;
+  text-align: center;
+  opacity: 0;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 25px;
+  animation-name: Show;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.Sign{
+  text-align: center;
+  padding-top: 5px;
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+  display: inline-block;
+  color: white;
+  background-color: #e4e219;
+  /* border-radius:4; */
+  text-decoration: none;
+  margin-left: 2%;
+  animation-name: Show;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes Edit
+{
+  from{
+    font-size: 30px;
+  }
+  to{
+    font-size: 40px;
+  }
+}
+@keyframes Edit1
+{
+  from{
+    font-size: 10px;
+  }
+  to{
+    font-size: 30px;
+  }
+}
+@keyframes Edit2
+{
+  from{
+    font-size: 10px;
+  }
+  to{
+    font-size: 25px;
+  }
+}
+@keyframes Show{
+  from{
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.contact{
+  background-color: rgb(228, 243, 238);
+}
+.contact1{
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  padding: 5% 0;
+}
+.ph{
+  background-color: white;
+  width: 50%;
+  padding: 20px;
+}
+.ph h1{
+  margin: 10%;
+}
+.div5{ 
+  width: 50%;
+  color: black;
+  padding: 20px;
+  background-color: rgb(187, 110, 187);
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.06);
+  
+}
+.cont{
+  width: 85%;
+  display:block;
+  margin-left: 15%;
+  margin-top: 5%;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+
+#input{
+  width: 70%;
+  font-size: 16px;
+  color: white;
+  border: 1px solid white;
+  background-color: rgb(187, 110, 187);
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 15%;
+  border-radius: 20px;
+
+}
+input::placeholder{
+  color: white;
+}
+textarea {
+  background-color: rgb(187, 110, 187);
+  margin-top: 20px;
+  margin-left: 15%;
+  padding: 15px;
+  width: 70%;
+  height: 100px;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+
+}
+textarea::placeholder{
+  color: white;
+}
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 1%;
+  margin-left: 15%;
+  padding: 15px 60px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .5s ease-in-out background-color;
+
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+.kk{
+  font-size: 20px;
+  
+  margin-left: 10%;
+}
+.div7{
+  background-color: black;
+  height: 40px;
+}
+@media (max-width: 1000px) {
+
+  .header2{
+    display: block;
+    justify-content: center;
+    padding-left: 0;
+  }
+.div22{
+  text-align: center;
+  margin-top: 10%;
+}
+.div22 img{
+  width: 60%;
+}
+.div21{
+  display: block;
+  width: 90%;
+  /* margin-left: 10%; */
+  text-align: center;
+}
+.div3 {
+  width: 80%;
+}
+.what{
+  width: 100%;
+}
+.div4photo{
+  display: none;
+}
+.Sign1
+{
+  display: none;
+}
+#input{
+  width: 60%;
+}
+textarea{
+  width: 60%;
+}
+}
+@media (max-width: 800px)
+{
+  .header2 h1{
+    font-size: 10px;
+    animation-name: Edit1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  .ul{
+    display: none;
+  }
+  .ph{
+    width: 30%;
+  }
+  .div5{
+    width: 60%;
+  }
+}
+@media (max-width: 500px)
+{
+.header2{
+  text-align: center;
+  font-size: 16px;
+  /* height: 300px; */
+}
+/* .Log ,.Sign{
+  
+  padding: 10px 20px;
+} */
+.header2 h1{
+    font-size: 10px;
+    animation-name: Edit1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  
+}
+
+.div2 h1{
+  font-size: 20px;
+}
+.div2 h3{
+  font-size: 18px;
+}
+.div2 p{
+  font-size: 15px;
+}
+.div2 ul li{
+  font-size: 14px;
+}
+.cont{
+  font-size: 18px;
+}
+.div5 label{
+  font-size: 16px;
+}
+.div4 h3{
+  font-size: 18px;
+}
+.pre{
+  font-size: 15px;
+}
+.list li{
+  font-size: 14px;
+}
+.Read {
+  padding: 5px 20px;
+  color: white;
+  border-radius: 10px;
+} 
+.sys{
+  height: 100px;
+}
+.sys h1{
+  font-size: 20px;
+}
+.ph{
+  display: none;
+}
+.div5{
+  width: 80%;
+}
+.div5 button{
+  padding: 7px 25px;
+}
+}
+
+.field-set{
+  width: 40%;
+  height: 500px;
+  margin: 30px auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding-top: 70px;
+}
+input[class="form-input"]{
+  width: 300px;
+  height: 50px;
+  padding-left: 15px;
+  margin-left: 20%;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  border: black 1px solid;
+  transition: 0.2s linear;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+.label1{
+  margin-left: 20%;
+  font-size: 20px;
+}
+input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+.log-in{
+  background-color: #252537;
+  color: white;
+  margin-left: 25%;
+  margin-top: 15%;
+  }
+
+  .data-table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .data-table th, .data-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .data-table img {
+    max-width: 50px;
+    max-height: 50px;
+  }
